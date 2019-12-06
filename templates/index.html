@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    table, th, td {
+    border: 1px solid black;
+    }
+    .error {color:rgb(107, 3, 12);}
+    </style>
+</head>
+<body>
+     <h1>User Signup</h1>
+       <form action="/" method="POST">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="username">Username</label>
+                    </td>
+                    <td>
+                        <input name="username" type="text" value="">
+                        <span class="error">{{user_error}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+                    <td>
+                       <input name="password" type="password">
+                       <span class="error">{{pass_error}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="reenter">Reenter Password</label>
+                    </td>
+                    <td>
+                        <input name="reenter" type="password">
+
+                        <span class="error">{{reenter_error}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email (optional)</label>
+                    </td>
+                    <td>
+                        <input name="email" type="text">
+                        <span class="error">{{email_error}}</span>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
